@@ -1,2 +1,2 @@
 # aleef.me
-My personal site for business
+My personal website for business
