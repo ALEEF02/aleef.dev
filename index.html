@@ -3,11 +3,50 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#FFFFFF"/>
 		<meta name="author" content="Anthony Ford">
 		<meta name="Description" content="Developer and Software Engineer">
 		<meta name="keywords" content="ALEEF02, aleef, aleef02, Anthony Ford, Anthony L Ford, Anthony Lee Ford, Anthony F">
 		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta property="og:title" content="ALEEF02 &middot; Anthony Ford">
+		<meta property="og:description" content="Anthony Ford - App Developer, Software Engineer and Tinkerer">
+		<meta property="og:image" content="https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375">
 		
+		<link rel="image_src" href="https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="manifest" href="manifest.json">
+		<link rel="canonical" href="https://aleef.dev/">
+		<link rel="preconnect" href="https://www.googletagmanager.com">
+		
+		<title>ALEEF02 - Anthony Ford</title>
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52495574-21"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-52495574-21', {'site_speed_sample_rate': 100});
+			
+			var trackOutboundLink = function(url) {
+				ga('send', 'event', 'outbound', 'click', url, {
+					'transport': 'beacon',
+					'hitCallback': function(){document.location = url;}
+				});
+			}
+			
+			if ('serviceWorker' in navigator) {
+				console.log('Queing Worker...');
+				window.addEventListener('load', function() {
+					console.log('Registering Worker...');
+					navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+						console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					}, function(err) {
+						console.log('ServiceWorker registration failed: ', err);
+					});
+				});
+			} else {
+				console.log('Browser does not support service worker');
+			}
+		</script>
 	</head>
 </html>
