@@ -25,6 +25,7 @@ body {
 	color: #fff;
 	background-color: hsl(240, 22%, 7%);
 	max-width: 1000px;
+	
 }
 
 a {
@@ -44,17 +45,56 @@ a:hover, a:focus {
 .anchor {
 	padding: 12px;
 	font-size: 24px;
+	top: 0;
 	line-height: 1.2;
 	display: flex;
-	min-height: calc(70% - 200px);
+	min-height: calc(70% - 115px);
 	color: hsl(116, 7%, 80%);
 	z-index: 10;
-	position: fixed;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
 	background-color: hsl(240, 22%, 7%);
 }
 
 .anchor > div {
 	margin: auto 0;
+}
+
+.anchor h1 {
+	font-size: 40px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.anchor h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.anchor h1 a:hover {
+	text-decoration: underline;
+}
+
+.anchor h2 {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	color: hsl(116, 7%, 53%);
+}
+
+@media (max-width: 767px) {
+	.anchorFade {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: calc(70% - 115px);
+		left: 0;
+		width: 100%;
+		height: 40px;
+		z-index: 11;
+		background: linear-gradient(to top, transparent, hsl(240, 22%, 7%));
+		pointer-events: none;
+		display: flex;
+	}
 }
 
 @media (min-width: 767px) {
@@ -64,10 +104,20 @@ a:hover, a:focus {
 }
 
 .scroll {
-	padding: 0 12px;
-	padding-bottom: 40px;
+	padding: 12px;
+	padding-right: 5%;
 	min-height: calc(70% - 200px);
 	display: flex;
+	
+}
+
+@media (max-width: 767px) {
+	.scroll {
+		padding: 0 12px;
+		padding-bottom: 5px;
+		/*min-height: calc(100% - 200px);*/
+		display: block;
+	}
 }
 
 .scroll > div {
@@ -85,7 +135,7 @@ a:hover, a:focus {
 	list-style-type: none;
 	padding: 0;
 	font-size: 16px;
-	color: hsl(200, 7%, 53%);
+	color: hsl(116, 7%, 53%);
 }
 
 .scroll li {
@@ -94,6 +144,13 @@ a:hover, a:focus {
 
 .scroll a {
 	font-size: 20px;
+}
+
+.scroll h3 {
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 400;
 }
 
 ::-webkit-scrollbar {
