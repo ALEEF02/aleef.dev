@@ -28,9 +28,15 @@
 			gtag('config', 'UA-52495574-21', {'site_speed_sample_rate': 100});
 			
 			var trackOutboundLink = function(url) {
-				ga('send', 'event', 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function(){document.location = url;}
+				if (url == 'https://aleef.dev/email-protection' && !(navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname)) {
+					url = `\x6dailto:anthony\x40${location.hostname}`;
+				}
+				
+				gtag('event', 'click', {
+					'event_category': 'outbound',
+					'event_label': url,
+					'transport_type': 'beacon',
+					'event_callback': function(){document.location = url;}
 				});
 			}
 			
@@ -77,21 +83,23 @@
 	</head>
 	<body>
 		<div class="anchor">
-			<div>
-				<h1><a href="/email-protection">Anthony Ford</a></h1>
-				<h2>ALEEF02</h2>
-				<br>
-				Developer and
-				<br>
-				Software Engineer
-				<br><br>
-				I open source all
-				<br>
-				my code on 
-				<a href="https://github.com/ALEEF02">GitHub</a>
+			<div class="anchorTitle">
+				<div>
+					<h1><a href="/email-protection" onclick="trackOutboundLink('https://aleef.dev/email-protection'); return false;">Anthony Ford</a></h1>
+					<h2>ALEEF02</h2>
+					<br>
+					Developer and
+					<br>
+					Software Engineer
+					<br><br>
+					I open source all
+					<br>
+					my code on 
+					<a href="https://github.com/ALEEF02">GitHub</a>
+				</div>
 			</div>
+			<div class="anchorFade"></div>
 		</div>
-		<div class="anchorFade"></div>
 		<div class="scroll">
 			<div>
 				<h3>Ongoing Projects</h3>
@@ -101,7 +109,7 @@
 					<li><a href="https://github.com/ALEEF02/Mr.Burt" onclick="trackOutboundLink('https://github.com/ALEEF02/Mr.Burt'); return false;">Burt NN</a><br>Using reading page numbers to predict quiz dates</li>
 				</ul>
 			
-				<h3>Accomplishments</h3>
+				<h4>Accomplishments</h4>
 				<ul>
 					<li><a href="https://aleef.dev" onclick="trackOutboundLink('https://aleef.dev'); return false;">aleef.dev</a><br>Built using HTML, CSS, and JavaScript<br>February 2020</li>
 					<li><a href="https://apps.rebble.io/en_US/developer/552f2a2626541f8ed0000097/1?native=false&query=ALEEF02&section=watchapps" onclick="trackOutboundLink('https://apps.rebble.io/en_US/developer/552f2a2626541f8ed0000097/1?native=false&query=ALEEF02&section=watchapps'); return false;">Pebble Watch Apps</a><br>Used JavaScript to build a wide variety of applications for Pebble Watches<br>April 2015 - June 2018</li>
@@ -114,11 +122,11 @@
 		
 		<script>
 			(async () => {
-				if (navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname) {
+				/*if (navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname) {
 					return;
-				}
-
-				document.querySelector('a[href="/email-protection"]').href = `\x6dailto:anthonyt\x40${location.hostname}`;
+				}*/
+				
+				document.querySelector('a[href="/email-protection"]').href = `\x6dailto:anthony\x40${location.hostname}`;
 			})();
 		</script>
 	</body>

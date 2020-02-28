@@ -1,6 +1,9 @@
 Location /sitemap
 	Rewrite /sitemap.xml
 	
+Location /email-protection
+	Rewrite /email-protection.html
+	
 Files
 	service-worker.js
 	sitemap.xml
