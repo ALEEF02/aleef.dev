@@ -1,6 +1,7 @@
 Location /sitemap
 	Rewrite /sitemap.xml
-
+	
 Files
 	service-worker.js
+	sitemap.xml
 	
