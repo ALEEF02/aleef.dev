@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2") format("woff2");
 }
 
 :root {
@@ -60,10 +59,16 @@ a:hover, a:focus {
 	display: flex;
 	min-height: calc(70vh - 115px);
 	color: hsl(116, 7%, 80%);
+	position: fixed;
 	z-index: 10;
-	position: -webkit-sticky;
-	position: sticky;
 	background-color: hsl(240, 22%, 7%);
+}
+
+@media (max-width: 805px) {
+	.anchorTitle {
+		position: -webkit-sticky;
+		position: sticky;
+	}
 }
 
 .anchorTitle > div {
@@ -104,6 +109,12 @@ a:hover, a:focus {
 		background: linear-gradient(to top, transparent, hsl(240, 22%, 7%));
 		pointer-events: none;
 		display: flex;
+	}
+}
+
+@media (max-height: 540px) {
+	.anchorFade {
+		top: 260px;
 	}
 }
 
