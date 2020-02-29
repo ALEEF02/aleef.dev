@@ -56,6 +56,9 @@ self.addEventListener('activate', event => {
 });*/
 
 self.addEventListener('fetch', function(event) {
+	if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') {
+		return;
+	}
 	if (event.request.url.startsWith(self.location.origin)) {
 		event.respondWith(
 			caches.open('RUNTIME').then(function(cache) {
