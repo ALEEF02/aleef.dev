@@ -182,6 +182,14 @@ a:hover, a:focus {
 }
 
 .scroll h5 {
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.scroll h6 {
 	color: hsl(116, 7%, 53%);
 	margin-top: 30px;
 	margin-bottom: 0;
@@ -211,4 +219,13 @@ a:hover, a:focus {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: hsl(116, 80%, 45%);
+}
+
+#donations {
+	user-select: text;
+}
+
+::selection {
+    background-color: hsl(116, 80%, 45%);
+    color: white;
 }
