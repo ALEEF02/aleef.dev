@@ -28,6 +28,7 @@
 		<title>ALEEF02 - Anthony Ford</title>
 		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52495574-21"></script>
+		
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -45,8 +46,13 @@
 					'transport_type': 'beacon',
 					'event_callback': function(){document.location = url;}
 				});
+				
+				if (typeof window.data == 'undefined') {
+					console.warn("GTag not loaded, redirecting user to destination...");
+					document.location = url;
+				}
 			}
-			
+						
 			if ('serviceWorker' in navigator) {
 				console.log('Queing Worker...');
 				window.addEventListener('load', function() {
