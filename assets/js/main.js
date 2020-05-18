@@ -92,7 +92,7 @@ function init(){
             LR.images[i].caption = "";
         }
         // Create the individual thumbnail partial
-        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" src="" data-large-img="images/large/'+ LR.images[i].exportFilename +'.jpg" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
+        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" alt="' + LR.images[i].exportFilename + '" src="" data-large-img="images/large/'+ LR.images[i].exportFilename +'.jpg" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
         LR.images[i].$thumbnail.data("index", i);
         // Isolate the actual thumbnail image
         LR.images[i].$thumbnailImg = $(LR.images[i].$thumbnail.find("img")[0]);
@@ -583,7 +583,7 @@ function init(){
         }
         _$loupeImage = $('<div class="image"></div>');
         _$loupeCorners = $('<div class="corners"></div>');
-        _$loupeImg = $('<img src="' + _$targetThumb.attr("data-large-img") + '"/>');
+        _$loupeImg = $('<img alt="' + _$targetThumb.attr("alt") + '" src="' + _$targetThumb.attr("data-large-img") + '"/>');
 
         _$loupeCorners.append(_$loupeImg);
         _$loupeImage.append(_$loupeCorners);
