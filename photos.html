@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="#0e0e16"/>
+		<meta name="author" content="Anthony Ford">
+		<meta name="Description" content="Developer and Software Engineer">
+		<meta name="keywords" content="ALEEF02, aleef, aleef02, aleefo2, ALEEF, dev, developer, javascript, JavaScript, Javascript, React Native, RN, CSS, Anthony Ford, Anthony L Ford, Anthony Lee Ford, Anthony F">
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta property="og:title" content="ALEEF02 &middot; Anthony Ford">
+		<meta property="og:description" content="Anthony Ford - App Developer, Software Engineer and Tinkerer">
+		<meta property="og:image" content="https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375">
+		
+		<link rel="image_src" href="https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375">
+		<link rel="manifest" href="manifest.json">
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="icon" sizes="16x16 32x32" href="favicon.ico">
+		<link rel="canonical" href="https://aleef.dev/">
+		<link rel="preconnect" href="https://www.googletagmanager.com">
+		<link rel="preconnect" href="https://www.google-analytics.com">
+		<link rel="preconnect" href="https://cdn.getforge.com">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="apple-touch-startup-image" href="apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" media="screen" title="Custom Settings" href="assets/css/custom.css" >
+		<script src="assets/js/libs/modernizr.custom.23122.js"></script>
+		
+		<title>ALEEF02 - Anthony Ford</title>
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52495574-21"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-52495574-21', {'site_speed_sample_rate': 100});
+			
+			var trackOutboundLink = function(url) {
+				if (url == 'https://aleef.dev/email-protection' && !(navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname)) {
+					url = `\x6dailto:anthony\x40${location.hostname}`;
+				}
+				
+				gtag('event', 'click', {
+					'event_category': 'outbound',
+					'event_label': url,
+					'transport_type': 'beacon',
+					'event_callback': function(){document.location = url;}
+				});
+			}
+			
+			if ('serviceWorker' in navigator) {
+				console.log('Queing Worker...');
+				window.addEventListener('load', function() {
+					console.log('Registering Worker...');
+					navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+						console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					}, function(err) {
+						console.log('ServiceWorker registration failed: ', err);
+					});
+				});
+			} else {
+				console.log('Browser does not support service worker');
+			}
+		</script>
+		
+		<script type="application/ld+json">
+			{
+				"name": "Anthony Ford",
+				"alternateName": "ALEEF02",
+				"description": "Anthony Ford - App Developer, Software Engineer and Tinkerer",
+				"headline": "Anthony Ford - App Developer, Software Engineer and Tinkerer",
+				"url": "https://aleef.dev",
+				"image": "https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375",
+				"sameAs": [
+					"https://twitter.com/ALEEF022",
+					"https://github.com/ALEEF02",
+					"https://play.google.com/store/apps/dev?id=6643565958992084937&hl=en_US",
+					"https://scratch.mit.edu/users/ALEEF02/"
+				],
+				"publisher": {
+					"@type": "Organization",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://s.gravatar.com/avatar/0c923c59c41de9bf767a6f2193602aef?s=375"
+					}
+				},
+				"@type": "WebSite",
+				"@context": "http://schema.org"
+			}
+		</script>
+	</head>
+	<body class="has-header" data-pagination-style="scroll" data-pagination-size="20">
+		<header class="">
+			<ul class="gallery-meta">
+				<li id="buttonFullscreen" title="Fullscreen Mode">
+					<div class="icon">
+						<svg version="1.1" id="svgIconFullscreen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 16" style="enable-background:new 0 0 18 16;" xml:space="preserve">
+							<g>
+								<path class="custom-colorable" d="M5.3871,9.95599C5.19136,9.76858,4.99176,9.85763,4.79376,10.0472l-2.86173,2.74138v-1.55466
+									c0-0.25257-0.21387-0.45733-0.47767-0.45733H0.47767C0.21387,10.7766,0,10.98136,0,11.23393v3.37367v0.93511
+									C0,15.79524,0.21387,16,0.47767,16h0.97668h3.5238c0.26377,0,0.47764-0.20476,0.47764-0.45729v-0.93511
+									c0-0.25254-0.21387-0.45733-0.47764-0.45733H3.34554l2.86694-2.7451c0.198-0.18957,0.30914-0.44923,0.11342-0.63664L5.3871,9.95599
+									z"/>
+								<path class="custom-colorable" d="M17.52233,10.7766h-0.97672c-0.26377,0-0.47764,0.20476-0.47764,0.45733v1.55466l-2.86172-2.74138
+									c-0.198-0.18957-0.39764-0.27862-0.59335-0.09121l-0.93879,0.81254c-0.19575,0.18741-0.08458,0.44707,0.11342,0.63664
+									l2.8669,2.7451h-1.63258c-0.26377,0-0.47764,0.20479-0.47764,0.45733v0.93511c0,0.25254,0.21387,0.45729,0.47764,0.45729h3.52376
+									h0.97672C17.7861,16,18,15.79524,18,15.54271v-0.93511v-3.37367C18,10.98136,17.7861,10.7766,17.52233,10.7766z"/>
+								<path class="custom-colorable" d="M3.34554,1.84973h1.63262c0.26377,0,0.47764-0.20479,0.47764-0.45733V0.45733C5.45579,0.20476,5.24193,0,4.97815,0h-3.5238
+									H0.47767C0.21387,0,0,0.20476,0,0.45733v0.93508v3.3737C0,5.01864,0.21387,5.2234,0.47767,5.2234h0.97668
+									c0.26381,0,0.47767-0.20476,0.47767-0.45729V3.21142L4.79376,5.9528c0.198,0.18957,0.3976,0.27862,0.59335,0.09121l0.93879-0.81254
+									C6.52161,5.04409,6.41048,4.7844,6.21247,4.59483L3.34554,1.84973z"/>
+								<path class="custom-colorable" d="M17.52233,0h-0.97672h-3.52376c-0.26377,0-0.47764,0.20476-0.47764,0.45733v0.93508
+									c0,0.25254,0.21387,0.45733,0.47764,0.45733h1.63258l-2.8669,2.7451c-0.19801,0.18957-0.30917,0.44926-0.11342,0.63663
+									l0.93879,0.81254c0.19571,0.18741,0.39535,0.09836,0.59335-0.09121l2.86172-2.74138V4.7661
+									c0,0.25254,0.21387,0.45729,0.47764,0.45729h0.97672C17.7861,5.2234,18,5.01864,18,4.7661v-3.3737V0.45733
+									C18,0.20476,17.7861,0,17.52233,0z"/>
+							</g>
+						</svg>
+					</div>
+				</li>
+			</ul>
+			
+			<p class="title">
+				<span id="galleryTitle">Landscape Photography</span><br>
+				<span id="galleryAuthor">
+					<a href="/email-protection" onclick="trackOutboundLink('https://aleef.dev/email-protection'); return false;">If you're interested in buying a full-resolution version of any of these images, email me</a></span>
+			</p>
+			
+		</header>
+		<div id="thumbnailContainer">
+			<div class="thumbnails thumbnail-size-md"></div>
+		</div>
+		<div id="loupeContainer" class="show-corners">
+			<div class="background"></div>
+			<div class="image-container"></div>
+			<div class="side-navigation">
+				<div class="hotspot" id="hotspotPrevLoupe">
+					<div class="button" id="buttonPrevSideLoupe">
+						<svg version="1.1" id="svgIconPrevSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 57" style="enable-background:new 0 0 30 57;" xml:space="preserve">
+							<path class="icon custom-colorable" d="M0,0v57c16.56854,0,30-12.75989,30-28.5S16.56854,0,0,0z M17.60291,33.87964
+								c0.34692,0.3291,0.34998,0.85938,0.00708,1.18457l-1.2431,1.17828c-0.34326,0.32532-0.90277,0.32245-1.24969-0.00647
+								L9.53137,30.9408L7,28.54163l8.20038-7.77301c0.35333-0.33508,0.92334-0.33801,1.27271-0.00671l1.26569,1.19952
+								c0.34943,0.3313,0.34613,0.8714-0.00739,1.2063l-5.7149,5.41711L17.60291,33.87964z"/>
+						</svg>
+					</div>
+				</div>
+				<div class="hotspot" id="hotspotNextLoupe">
+					<div class="button" id="buttonNextSideLoupe">
+						<svg version="1.1" id="svgIconNextSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 57" style="enable-background:new 0 0 30 57;" xml:space="preserve">
+							<path class="icon custom-colorable" d="M30,57V0C13.43146,0,0,12.75989,0,28.5S13.43146,57,30,57z M12.39709,23.12036
+								c-0.34692-0.3291-0.34998-0.85938-0.00708-1.18457l1.2431-1.17828c0.34326-0.32532,0.90277-0.32245,1.24969,0.00647l5.58582,5.29523
+								L23,28.45837l-8.20038,7.77301c-0.35333,0.33508-0.92334,0.33801-1.27271,0.00671l-1.26569-1.19952
+								c-0.34943-0.3313-0.34613-0.8714,0.00739-1.2063l5.7149-5.41711L12.39709,23.12036z"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="info-container">
+				<div id="loupeMeta"></div>
+				<ul class="lateral-nav">
+					<li id="buttonPrev">
+						<svg version="1.1" id="svgIconPrevLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+							</style>
+							<path class="icon custom-colorable" d="M25.20105,14.76864l-8.2004,7.773l2.5314,2.3992l5.5858,5.2952c0.3469,0.3289,0.9064,0.3318,1.2497,0.0065
+								l1.2431-1.1783c0.3429-0.3252,0.3398-0.8555-0.0071-1.1846l-5.5864-5.2948l5.7149-5.4171c0.3535-0.3349,0.3568-0.875,0.0074-1.2063
+								l-1.2657-1.1995C26.12435,14.43064,25.55435,14.43354,25.20105,14.76864z"/>
+						</svg>
+					</li>
+					<li class="count"><span id="countCurrent"></span> of <span id="countTotal"></span></li>
+					<li id="buttonNext">
+						<svg version="1.1" id="svgIconNextLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+							</style>
+							<path class="icon custom-colorable" d="M19.79895,14.76864l8.2004,7.773l-2.5314,2.3992l-5.5858,5.2952c-0.3469,0.3289-0.9064,0.3318-1.2497,0.0065
+								l-1.2431-1.1783c-0.3429-0.3252-0.3398-0.8555,0.0071-1.1846l5.5864-5.2948l-5.7149-5.4171
+								c-0.3535-0.3349-0.3568-0.875-0.0074-1.2063l1.2657-1.1995C18.87565,14.43064,19.44565,14.43354,19.79895,14.76864z"/>
+						</svg>
+					</li>
+				</ul>
+			</div>
+			<div id="loupeCloseButton">
+				<svg version="1.1" id="svgIconLoupeClose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+					<path class="shape-x custom-colorable" d="M14.77881,17.30074l5.212,5.2222l-5.0831,5.0924c-0.3476,0.3484-0.5746,0.7624-0.2308,1.1067l1.5682,1.4763
+						c0.3436,0.3443,0.8045,0.2596,1.1521-0.0886l5.0825-5.093l5.2119,5.222c0.3536,0.3547,0.9244,0.3578,1.2741,0.0073l1.2677-1.27
+						c0.3497-0.3507,0.3465-0.9224-0.0071-1.2768l-5.2119-5.2221l5.0828-5.0925c0.3475-0.3485,0.5429-0.8259,0.1994-1.1702
+						l-1.6474-1.4921c-0.3438-0.3443-0.6936-0.1803-1.0411,0.1679l-5.0828,5.0929l-5.212-5.222
+						c-0.3537-0.3546-0.9241-0.3577-1.2742-0.007l-1.2672,1.2698C14.42171,16.37464,14.42491,16.94624,14.77881,17.30074z"/>
+				</svg>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var LR = LR || {};
+			LR.images = [                                                                                        {"id": "9296", "exportFilename": "DJI_0703", "title": "", "caption" : "April 24, 2020 19:55\n3992 x 2992\n33°36'8.2337&quot; N 117°53'59.8704&quot; W 105.0 ft"},
+			             {"id": "9297", "exportFilename": "DJI_0704", "title": "", "caption" : "April 24, 2020 19:55\n3992 x 2992\n33°36'8.2219&quot; N 117°53'59.8558&quot; W 105.0 ft"},
+			             {"id": "9298", "exportFilename": "DJI_0706", "title": "", "caption" : "April 24, 2020 19:59\n3992 x 2992\n33°35'54.0563&quot; N 117°54'5.2006&quot; W 32.8 ft"},
+			             {"id": "31549", "exportFilename": "DJI_0706_Igor", "title": "", "caption" : "April 24, 2020 19:59\n3992 x 2992\n33°35'54.0563&quot; N 117°54'5.2006&quot; W 32.8 ft"},
+			             {"id": "15694", "exportFilename": "DJI_0718-Edit", "title": "", "caption" : "April 24, 2020 20:13\n3992 x 2992\n33°36'1.9112&quot; N 117°53'57.3963&quot; W 55.8 ft"},
+			             {"id": "9306", "exportFilename": "DJI_0718", "title": "", "caption" : "April 24, 2020 20:13\n3992 x 2992\n33°36'1.9112&quot; N 117°53'57.3963&quot; W 55.8 ft"},
+			             {"id": "9308", "exportFilename": "DJI_0720", "title": "", "caption" : "April 24, 2020 20:14\n3992 x 2992\n33°36'1.911&quot; N 117°53'57.386&quot; W 131.2 ft"},
+			             {"id": "9313", "exportFilename": "DJI_0725", "title": "", "caption" : "April 24, 2020 20:20\n3992 x 2992\n33°35'49.0264&quot; N 117°54'13.7741&quot; W 442.9 ft"},
+			             {"id": "9314", "exportFilename": "DJI_0727", "title": "", "caption" : "April 24, 2020 20:23\n3992 x 2992\n33°36'4.9899&quot; N 117°54'8.9746&quot; W 442.9 ft"},
+			             {"id": "9323", "exportFilename": "DJI_0739", "title": "", "caption" : "April 24, 2020 20:32\n3992 x 2992\n33°36'12.7939&quot; N 117°54'1.4196&quot; W 354.3 ft"},
+			             {"id": "9327", "exportFilename": "DJI_0743", "title": "", "caption" : "May 02, 2020 19:24\n3992 x 2992\n33°36'19.6036&quot; N 117°48'42.3173&quot; W 1263.1 ft"},
+			             {"id": "9331", "exportFilename": "DJI_0760", "title": "", "caption" : "May 02, 2020 19:36\n3992 x 2992\n33°36'16.4646&quot; N 117°48'44.3014&quot; W 1233.6 ft"},
+			             {"id": "28074", "exportFilename": "DJI_0762-HDR", "title": "", "caption" : "May 02, 2020 19:37\n3992 x 2992\n33°36'16.4647&quot; N 117°48'44.302&quot; W 1233.6 ft"},
+			             {"id": "9336", "exportFilename": "DJI_0774", "title": "", "caption" : "May 02, 2020 19:44\n3992 x 2992\n33°36'23.4569&quot; N 117°48'45.8216&quot; W 1368.1 ft"},
+			             {"id": "9340", "exportFilename": "DJI_0780", "title": "", "caption" : "May 02, 2020 20:16\n3992 x 2992\n33°36'15.7629&quot; N 117°48'42.2042&quot; W 1361.5 ft"},
+			             {"id": "9343", "exportFilename": "DJI_0783", "title": "", "caption" : "May 02, 2020 20:17\n3992 x 2992\n33°36'15.7583&quot; N 117°48'42.2124&quot; W 1364.8 ft"},
+			             {"id": "8583", "exportFilename": "PANO0003-Pano", "title": "", "caption" : "May 02, 2020 21:36\n7833 x 10778\n33°41'24.6985&quot; N 117°52'54.8901&quot; W 282.2 ft"},
+			             {"id": "5909", "exportFilename": "PANO0003-Pano-2", "title": "", "caption" : "May 02, 2020 21:39\n3930 x 6071\n33°41'29.13&quot; N 117°52'55.2713&quot; W 269.0 ft"},
+			             {"id": "9350", "exportFilename": "DJI_0803", "title": "", "caption" : "May 02, 2020 21:40\n3992 x 2992\n33°41'30.1005&quot; N 117°52'49.6157&quot; W 269.0 ft"},
+			             {"id": "9356", "exportFilename": "DJI_0811", "title": "", "caption" : "May 02, 2020 21:44\n3992 x 2992\n33°41'23.6919&quot; N 117°53'1.4169&quot; W 210.0 ft"},
+			                        ]        
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+		<script>
+			(async () => {
+				if (navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname) {
+					return;
+				}
+				
+				document.querySelector('a[href="/email-protection"]').href = `\x6dailto:anthony\x40${location.hostname}`;
+			})();
+		</script>
+	</body>
+</html>

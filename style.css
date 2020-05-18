@@ -174,22 +174,6 @@ a:hover, a:focus {
 }
 
 .scroll h4 {
-	color: #fff;
-	margin-top: 30px;
-	margin-bottom: 0;
-	font-weight: 400;
-	font-size: 1.3em;
-}
-
-.scroll h5 {
-	color: #fff;
-	margin-top: 30px;
-	margin-bottom: 0;
-	font-weight: 400;
-	font-size: 1.3em;
-}
-
-.scroll h6 {
 	color: hsl(116, 7%, 53%);
 	margin-top: 30px;
 	margin-bottom: 0;

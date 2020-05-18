@@ -9,8 +9,14 @@
 
 <url>
   <loc>https://aleef.dev/</loc>
-  <lastmod>2020-02-27T23:53:50+00:00</lastmod>
-  <changefreq>yearly</changefreq>
+  <lastmod>2020-05-18T15:53:50+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://aleef.dev/photos</loc>
+  <lastmod>2020-05-18T15:53:50+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 
 

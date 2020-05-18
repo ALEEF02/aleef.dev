@@ -1,0 +1,92 @@
+html {
+  background-color: #0E0E16 !important;
+  color: inherit;
+  user-select: none;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2") format("woff2");
+}
+
+.thumb-img {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .15) !important;
+  border-color: #424242 !important;
+  border-width: 2px !important;
+}
+
+#loupeContainer div.background {
+  background-color: #0E0E16 !important;
+  color: inherit;
+}
+
+header div.background {
+  background-color: #0E0E16 !important;
+  color: inherit;
+}
+
+.custom-colorable {
+  fill: #CCCCCC !important;
+}
+
+body {
+  background-color: #0E0E16 !important;
+  color: #41AC39 !important;
+  font: normal 20px/1.4 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+}
+
+#loupeMeta p.caption {
+	white-space: pre !important;
+	height: 54px !important;
+}
+
+a {
+	color: hsl(116, 50%, 45%);
+	font-size: 15px;
+}
+
+a:hover, a:focus {
+	color: hsl(116, 7%, 80%);
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+	width: 14x;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	background-color: hsl(116, 7%, 30%);
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: hsl(116, 80%, 45%);
+}
+
+#galleryTitle {
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+#galleryAuthor {
+	color: hsl(116, 7%, 80%);
+	font-size: 20px;
+}
+
+::selection {
+	background-color: hsl(116, 80%, 45%);
+	color: white;
+}
