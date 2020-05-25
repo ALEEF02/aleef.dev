@@ -2,10 +2,13 @@ Location /sitemap
 	Rewrite /sitemap.xml
 	
 Location /email-protection
-	Rewrite /email-protection.html
+	Rewrite /404.html
 	
 Location /photos
 	Rewrite /photos.html
+	
+NotFound
+	Rewrite /404.html
 	
 Files
 	service-worker.js
