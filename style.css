@@ -38,7 +38,7 @@ a:hover, a:focus {
 	
 }
 
-@media (max-width: 805px) {
+@media (max-width: 804px) {
 	.anchor {
 		display: inline;
 	}
@@ -63,7 +63,7 @@ a:hover, a:focus {
 	background-color: hsl(240, 22%, 7%);
 }
 
-@media (max-width: 805px) {
+@media (max-width: 804px) {
 	.anchorTitle {
 		position: -webkit-sticky;
 		position: sticky;
@@ -96,7 +96,7 @@ a:hover, a:focus {
 	color: hsl(116, 7%, 53%);
 }
 
-@media (max-width: 805px) {
+@media (max-width: 804px) {
 	.anchorFade {
 		position: -webkit-sticky;
 		position: sticky;
@@ -121,6 +121,18 @@ a:hover, a:focus {
 	.scroll {
 		float: right;
 	}
+	
+	.scroll > div {
+		margin: auto 0;
+		/*max-width: 551.969px;*/
+		max-width: calc(70vw - 148.031px);
+	}
+}
+
+@media (min-width: 1000px) {
+	.scroll > div {
+		max-width: 551.969px;
+	}
 }
 
 .scroll {
@@ -131,7 +143,7 @@ a:hover, a:focus {
 	
 }
 
-@media (max-width: 805px) {
+@media (max-width: 804px) {
 	.scroll {
 		padding: 0 12px;
 		padding-bottom: 5px;
@@ -182,7 +194,7 @@ a:hover, a:focus {
 	font-style: italic;
 }
 
-@media (max-width: 805px) {
+@media (max-width: 804px) {
 	.scroll h3 {
 		margin-top: 0px;
 	}
@@ -207,6 +219,11 @@ a:hover, a:focus {
 
 #donations {
 	user-select: text;
+	word-wrap: break-word;
+}
+
+#donations a {
+	user-select: none;
 }
 
 ::selection {

@@ -74,10 +74,15 @@ a {
 	background: hsl(116, 80%, 45%);
 }
 
-#galleryTitle {
+#galleryTitle a {
 	color: #fff;
 	font-weight: 400;
 	font-size: 20px;
+}
+
+#galleryTitle a:hover, #galleryTitle a:focus {
+	text-decoration: underline;
+	color: #fff;
 }
 
 
