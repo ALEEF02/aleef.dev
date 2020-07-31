@@ -7,6 +7,12 @@ Location /email-protection
 Location /photos
 	Rewrite /photos.html
 	
+Location /gaming
+	Rewrite /gaming.html
+	
+Location /3d
+	Rewrite /3d.html
+	
 NotFound
 	Rewrite /404.html
 	
