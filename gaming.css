@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2") format("woff2");
+}
+
+:root {
+    --blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;user-select: none;scrollbar-color: dark;-webkit-tap-highlight-color: transparent;
+}
+
+*,::after,::before {
+    box-sizing: border-box
+}
+
+html, body {
+	height: auto;
+}
+
+body {
+	font: normal 20px/1.4 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	color: #fff;
+	background-color: hsl(240, 22%, 7%);
+}
+
+a {
+	color: hsl(116, 50%, 45%);
+}
+
+a:hover, a:focus {
+	color: hsl(116, 80%, 45%);
+}
+
+.contentColumn {
+	float: left;
+	width: 28%;
+	margin: 0 2.66%;
+}
+
+@media (max-width: 926px) {
+	.contentColumn {
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
+}
+
+/* Clear floats after the columns */
+.scroll:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scroll {
+	padding: 12px;
+	min-height: calc(70% - 200px);
+	display: block;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.scroll h1 {
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+.scroll ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 16px;
+	color: hsl(116, 7%, 53%);
+}
+
+.scroll li {
+	margin-top: 8px;
+}
+
+.scroll a {
+	font-size: 20px;
+}
+
+.scroll h3 {
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.scroll h4 {
+	color: hsl(116, 7%, 53%);
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 16px;
+	font-style: italic;
+}
+
+#usernames {
+	user-select: text;
+	word-wrap: break-word;
+}
+
+#usernames a {
+	user-select: none;
+}
+
+.nonSelect {
+	user-select: none;
+}
+
+.hidden {
+   display: none;
+}
+
+.lazy {
+	background-repeat: no-repeat;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 926px) {
+	.lazy {
+		margin-bottom: 2vh;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 14x;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 10px;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	background-color: hsl(116, 7%, 30%);
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: hsl(116, 80%, 45%);
+}
+
+::selection {
+    background-color: hsl(116, 80%, 45%);
+    color: white;
+}
