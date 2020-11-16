@@ -113,7 +113,7 @@
 							YouTube
 						</a><br>
 							I post videos of me playing games and using unusual controllers
-						<img id="div_mindpencil" class="lazy" src="images/site/small/mindpencil.jpg">
+						<img id="div_mindpencil" class="lazy" alt="YouTube" src="images/site/small/mindpencil.jpg">
 						<img id="img_mindpencil" class="hidden" src="images/site/large/mindpencil.png" onload="upgradeImage(this);">
 					</li>
 					<li>
@@ -121,7 +121,7 @@
 							Twitch
 						</a><br>
 							Streaming random games and speedrunning live
-						<img id="div_golfit" class="lazy" src="images/site/small/golfit.jpg">
+						<img id="div_golfit" class="lazy" alt="Twitch.tv" src="images/site/small/golfit.jpg">
 						<img id="img_golfit" class="hidden" src="images/site/large/golfit.png" onload="upgradeImage(this);">
 					</li>
 				</ul>
@@ -134,7 +134,7 @@
 							Steam
 						</a><br>
 							Where I play the majority of my games
-						<img id="div_steam" class="lazy" src="images/site/small/steam.jpg">
+						<img id="div_steam" class="lazy" alt="Steam" src="images/site/small/steam.jpg">
 						<img id="img_steam" class="hidden" src="images/site/large/steam.png" onload="upgradeImage(this);">
 					</li>
 					<li>
@@ -142,7 +142,7 @@
 							Speedruns
 						</a><br>
 						Playing games as fast as possible
-						<img id="div_spongebob" class="lazy" src="images/site/small/spongebob.jpg">
+						<img id="div_spongebob" class="lazy" alt="Speedruns" src="images/site/small/spongebob.jpg">
 						<img id="img_spongebob" class="hidden" src="images/site/large/spongebob.png" onload="upgradeImage(this);">
 					</li>
 				</ul>
@@ -157,15 +157,5 @@
 				</ul>
 			</div>
 		</div>
-	
-		<script>
-			(async () => {
-				if (navigator.webdriver || document.visibilityState === 'prerender' || !location.hostname) {
-					return;
-				}
-				
-				document.querySelector('a[href="/email-protection"]').href = `\x6dailto:anthony\x40${location.hostname}`;
-			})();
-		</script>
 	</body>
 </html>
