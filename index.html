@@ -58,7 +58,7 @@
 				console.log('Queing Worker...');
 				window.addEventListener('load', function() {
 					console.log('Registering Worker...');
-					navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+					navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
 						console.log('ServiceWorker registration successful with scope: ', registration.scope);
 					}, function(err) {
 						console.log('ServiceWorker registration failed: ', err);
@@ -121,10 +121,14 @@
 					<li><a href="https://lfweather.net" onclick="trackOutboundLink('https://lfweather.net'); return false;">LFWeather</a><br>Uses a self-mounted weather station device to record and predict weather</li>
 					<li><a href="https://github.com/ALEEF02/Bulletin-Magazine-Mobile-App" onclick="trackOutboundLink('https://github.com/ALEEF02/Bulletin-Magazine-Mobile-App'); return false;">BullETin Magazine</a><br>App to display school articles in React Native</li>
 					<li><a href="https://github.com/ALEEF02/Project-MREAA" onclick="trackOutboundLink('https://github.com/ALEEF02/Project-MREAA'); return false;">Project MREAA</a><br>A motorized rotating elevation and azimuth antenna</li>
-					<li><a href="https://www.uscyberpatriot.org/Pages/Competition/Competition-Overview.aspx" onclick="trackOutboundLink('https://www.uscyberpatriot.org/Pages/Competition/Competition-Overview.aspx'); return false;">CyberPatriot Defense Competition</a><br>Placed Platinum two consecutive years as team 12-0958 and currently competing as team 13-3812</li>
 					<li><a href="https://github.com/ALEEF02/aleef.dev" onclick="trackOutboundLink('https://github.com/ALEEF02/aleef.dev'); return false;">aleef.dev</a><br>Built using HTML, CSS, and JavaScript</li>
 				</ul>
-			
+				
+				<h3>Awards</h3>
+				<ul>
+					<li><a href="https://www.uscyberpatriot.org/Pages/Competition/Competition-Overview.aspx" onclick="trackOutboundLink('https://www.uscyberpatriot.org/Pages/Competition/Competition-Overview.aspx'); return false;">CyberPatriot Defense Competition</a><br>Placed Platinum Division three consecutive years as team 12-0958 (2018-2020) and team 13-3812 (2020-2021)<br>January 2018 - February 2021</li>
+				</ul>
+				
 				<h3>Accomplishments</h3>
 				<ul>
 					<li><a href="https://github.com/ALEEF02/CryptoBot" onclick="trackOutboundLink('https://github.com/ALEEF02/CryptoBot'); return false;">CryptoBot</a><br>A Discord bot made in JavaScript to get information about and posts updates on any cryptocurrency<br>July 2020 - August 2020</li>
