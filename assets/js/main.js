@@ -92,7 +92,7 @@ function init(){
             LR.images[i].caption = "";
         }
         // Create the individual thumbnail partial
-        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" alt="' + LR.images[i].exportFilename + '" src="" data-large-img="'+ LR.images[i].lageLink +'" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
+        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" alt="' + LR.images[i].exportFilename + '" src="" data-large-img="'+ LR.images[i].largeLink +'" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
         LR.images[i].$thumbnail.data("index", i);
         // Isolate the actual thumbnail image
         LR.images[i].$thumbnailImg = $(LR.images[i].$thumbnail.find("img")[0]);
@@ -258,7 +258,7 @@ function init(){
         );
         LR.images[0].$thumbnailImg.attr(
             "src",
-            "images/thumbnails/" + LR.images[0].exportFilename + ".jpg"
+			LR.images[0].thumLink
         );
         _$lastLoadedThumb = LR.images[0].$thumbnailImg;
         _lastLoadedThumbIndex = LR.images[0].index;
