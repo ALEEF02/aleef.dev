@@ -92,7 +92,7 @@ function init(){
             LR.images[i].caption = "";
         }
         // Create the individual thumbnail partial
-        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" alt="' + LR.images[i].exportFilename + '" src="" data-large-img="images/large/'+ LR.images[i].exportFilename +'.jpg" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
+        LR.images[i].$thumbnail = $('<div class="thumbnail"><div class="image-container"><div class="image"><img class="thumb-img" alt="' + LR.images[i].exportFilename + '" src="" data-large-img="'+ LR.images[i].lageLink +'" data-id="ID'+ LR.images[i].id +'" data-title="' + LR.images[i].title + '" data-caption="' + LR.images[i].caption + '"/></div></div></div>');
         LR.images[i].$thumbnail.data("index", i);
         // Isolate the actual thumbnail image
         LR.images[i].$thumbnailImg = $(LR.images[i].$thumbnail.find("img")[0]);
@@ -167,7 +167,7 @@ function init(){
             );
             LR.images[i].$thumbnailImg.attr(
                 "src",
-                "images/thumbnails/" + LR.images[i].exportFilename + ".jpg"
+                LR.images[i].thumLink
             );
             _$lastLoadedThumb = LR.images[i].$thumbnailImg;
             _lastLoadedThumbIndex = LR.images[i].index;
@@ -207,7 +207,7 @@ function init(){
             );
             LR.images[i].$thumbnailImg.attr(
                 "src",
-                "images/thumbnails/" + LR.images[i].exportFilename + ".jpg"
+                LR.images[i].thumLink
             );
             _lastLoadedThumbIndex = LR.images[i].index;
         }
@@ -289,7 +289,7 @@ function init(){
             );
             LR.images[i].$thumbnailImg.attr(
                 "src",
-                "images/thumbnails/" + LR.images[i].exportFilename + ".jpg"
+                LR.images[i].thumLink
             );
             _$lastLoadedThumb = LR.images[i].$thumbnailImg;
             _lastLoadedThumbIndex = LR.images[i].index;
@@ -401,7 +401,7 @@ function init(){
             );
             LR.images[i].$thumbnailImg.attr(
                 "src",
-                "images/thumbnails/" + LR.images[i].exportFilename + ".jpg"
+                LR.images[i].thumLink
             );
             _$lastLoadedThumb = LR.images[i].$thumbnailImg;
             _lastLoadedThumbIndex = LR.images[i].index;
