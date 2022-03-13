@@ -351,7 +351,7 @@ function init(){
     }
 
     function onWindowLoadScroll(e) {
-        if((_$w.scrollTop() + _viewportHeight) == _$body.height() && _thumbsToLoad == 0 && _lastLoadedThumbIndex < LR.images.length - 1){
+        if((_$w.scrollTop() + _viewportHeight) > _$body.height() - 5 && _thumbsToLoad == 0 && _lastLoadedThumbIndex < LR.images.length - 1){
             loadMoreThumbnails(_lastLoadedThumbIndex + 1, getCurrentColumnCount() * 2);
         }
     }

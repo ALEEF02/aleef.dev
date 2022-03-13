@@ -19,6 +19,7 @@ NotFound
 Files
 	service-worker.js
 	sitemap.xml
+	robots.txt
 	favicon.ico
 	favicon-16.png
 	favicon-32.png
