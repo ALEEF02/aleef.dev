@@ -56,7 +56,7 @@ a:hover, a:focus {
 	top: 0;
 	line-height: 1.2;
 	display: flex;
-	min-height: calc(70vh - 115px);
+	min-height: calc(60vh - 115px);
 	color: hsl(116, 7%, 80%);
 	position: fixed;
 	z-index: 10;
@@ -100,7 +100,7 @@ a:hover, a:focus {
 	.anchorFade {
 		position: -webkit-sticky;
 		position: sticky;
-		top: calc(70% - 116px);
+		top: calc(60% - 116px);
 		left: 0;
 		width: 100%;
 		height: 40px;
@@ -111,9 +111,9 @@ a:hover, a:focus {
 	}
 }
 
-@media (max-height: 540px) {
+@media (max-height: 635px) {
 	.anchorFade {
-		top: 260px;
+		top: 265px;
 	}
 }
 
