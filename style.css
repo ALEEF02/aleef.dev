@@ -81,12 +81,14 @@ a:hover, a:focus {
 }
 
 .anchorTitle h1 a {
-	text-decoration: none;
+	text-decoration: underline 2px;
+	text-underline-offset: 2px;
 	color: #fff;
 }
 
 .anchorTitle h1 a:hover {
 	text-decoration: underline;
+	text-underline-offset: 0px;
 }
 
 .anchorTitle h2 {
