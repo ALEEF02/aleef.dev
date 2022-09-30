@@ -44,9 +44,18 @@ a:hover, a:focus {
 	}
 }
 
+.anchorTitle > div {
+	margin: auto 0;
+}
+
 @media (min-width: 805px) {
 	.anchorTitle {
 		float: left;
+		max-width: 301px;
+	}
+	
+	.anchorTitle > div {
+		margin: 35.375px auto 0;
 	}
 }
 
@@ -68,10 +77,6 @@ a:hover, a:focus {
 		position: -webkit-sticky;
 		position: sticky;
 	}
-}
-
-.anchorTitle > div {
-	margin: auto 0;
 }
 
 .anchorTitle h1 {
@@ -98,11 +103,45 @@ a:hover, a:focus {
 	color: hsl(116, 7%, 53%);
 }
 
+#skills {
+	font-size: 20px;	
+}
+
+#skills > div {
+	display: contents;
+	-webkit-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+body:has(.Javascript:hover) #JavaScript,
+body:has(.Java:hover) #Java,
+body:has(.Node:hover) #Node,
+body:has(.SQL:hover) #SQL,
+body:has(.C:hover) #C,
+body:has(.CS:hover) #CS,
+body:has(.CPP:hover) #CPP,
+body:has(.Hyper:hover) #Hyper,
+body:has(.Py:hover) #Py,
+body:has(.PHP:hover) #PHP,
+body:has(.React:hover) #React,
+body:has(.Expo:hover) #Expo,
+body:has(.Gradle:hover) #Gradle,
+body:has(.Perl:hover) #Perl,
+body:has(.PS:hover) #PS,
+body:has(.LR:hover) #LR,
+body:has(.PP:hover) #PP,
+body:has(.Mach:hover) #Mach,
+body:has(.Micro:hover) #Micro { 
+	color: hsl(116, 50%, 47%);
+}
+
+body:has(a:hover) #skills { color: hsl(116, 7%, 80%); }
+
 @media (max-width: 804px) {
 	.anchorFade {
 		position: -webkit-sticky;
 		position: sticky;
-		top: calc(60% - 116px);
+		top: calc(60vh - 116px);
 		left: 0;
 		width: 100%;
 		height: 40px;
@@ -110,6 +149,10 @@ a:hover, a:focus {
 		background: linear-gradient(to top, transparent, hsl(240, 22%, 7%));
 		pointer-events: none;
 		display: flex;
+	}
+	
+	#skills {
+		display:none;
 	}
 }
 
