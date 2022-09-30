@@ -156,9 +156,9 @@ body:has(a:hover) #skills { color: hsl(116, 7%, 80%); }
 	}
 }
 
-@media (max-height: 635px) {
+@media (max-height: 683px) {
 	.anchorFade {
-		top: 265px;
+		top: 295px;
 	}
 }
 
