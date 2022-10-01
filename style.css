@@ -109,8 +109,8 @@ a:hover, a:focus {
 
 #skills > div {
 	display: contents;
-	-webkit-transition: color 0.3s ease;
-	transition: color 0.3s ease;
+	-webkit-transition: color 0.17s ease;
+	transition: color 0.17s ease;
 }
 
 body:has(.Javascript:hover) #JavaScript,
@@ -156,9 +156,9 @@ body:has(a:hover) #skills { color: hsl(116, 7%, 80%); }
 	}
 }
 
-@media (max-height: 683px) {
+@media (max-height: 635px) {
 	.anchorFade {
-		top: 295px;
+		top: 265px;
 	}
 }
 
