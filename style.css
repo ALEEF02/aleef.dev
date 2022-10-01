@@ -139,13 +139,14 @@ body:has(a:hover) #skills { color: hsl(116, 7%, 80%); }
 
 @media (max-width: 804px) {
 	.anchorFade {
-		position: -webkit-sticky;
+		/*position: -webkit-sticky;
 		position: sticky;
-		top: calc(60vh - 116px);
+		top: calc(60vh - 116px);*/
+		position: fixed;
 		left: 0;
 		width: 100%;
 		height: 40px;
-		z-index: 9;
+		z-index: 11;
 		background: linear-gradient(to top, transparent, hsl(240, 22%, 7%));
 		pointer-events: none;
 		display: flex;
@@ -156,11 +157,11 @@ body:has(a:hover) #skills { color: hsl(116, 7%, 80%); }
 	}
 }
 
-@media (max-height: 635px) {
+/*@media (max-height: 636px) {
 	.anchorFade {
 		top: 265px;
 	}
-}
+}*/
 
 @media (min-width: 805px) {
 	.scroll {
