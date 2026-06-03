@@ -130,6 +130,7 @@ body:has(.PS:hover) #PS,
 body:has(.LR:hover) #LR,
 body:has(.PP:hover) #PP,
 body:has(.Mach:hover) #Mach,
+body:has(.UML:hover) #UML,
 body:has(.Micro:hover) #Micro { 
 	color: hsl(116, 50%, 47%);
 }
